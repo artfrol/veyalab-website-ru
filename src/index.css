@@ -98,11 +98,13 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     @apply bg-background text-foreground font-inter;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -113,5 +115,32 @@
 @layer utilities {
   .gradient-text {
     @apply bg-gradient-to-r from-veyalab-purple to-veyalab-blue bg-clip-text text-transparent;
+  }
+  
+  /* Mobile-specific utilities */
+  .mobile-container {
+    @apply px-4 md:px-0;
+  }
+  
+  .mobile-section-padding {
+    @apply py-12 md:py-16;
+  }
+}
+
+/* Override default styles for better mobile experience */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
   }
 }
