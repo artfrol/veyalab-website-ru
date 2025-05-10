@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { Button } from './ui/button';
 
 const Navbar = () => {
   const isMobile = useIsMobile();
@@ -24,6 +25,18 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      {isMobile && (
+        <div className="mt-2 flex justify-center">
+          <a 
+            href="https://calendly.com/artfrol-af/artem-frolov" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-md bg-gradient-to-r from-veyalab-purple to-veyalab-blue text-white hover:shadow-md transition-all duration-200"
+          >
+            Записаться на консультацию
+          </a>
+        </div>
+      )}
     </nav>
   );
 };

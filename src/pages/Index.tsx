@@ -37,7 +37,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <Navbar />
-      <main className="pt-16 md:pt-20"> {/* Added padding top to account for fixed navbar */}
+      <main className="pt-20 md:pt-24"> {/* Increased padding top to account for the navbar on mobile */}
         <HeroSection />
         <ProblemSection />
         <SuccessStoriesSection />

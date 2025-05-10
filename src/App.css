@@ -1,4 +1,3 @@
-
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -13,6 +12,24 @@
   
   .card {
     padding: 1.5em;
+  }
+  
+  /* Fix container padding for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Improve text centering on mobile */
+  h1, h2, h3, p {
+    text-align: center;
+  }
+  
+  /* Better button centering */
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

@@ -12,15 +12,17 @@ const CtaSection = () => {
         <p className="text-xl mb-10 max-w-2xl mx-auto">
           Проанализируем ваши бизнес процессы и поможем построить план по их автоматизации.
         </p>
-        <a 
-          href="https://calendly.com/artfrol-af/artem-frolov" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline" size="lg" className="bg-white text-veyalab-purple hover:bg-veyalab-gray hover:text-veyalab-purple">
-            Записаться на бесплатную консультацию
-          </Button>
-        </a>
+        <div className="flex justify-center">
+          <a 
+            href="https://calendly.com/artfrol-af/artem-frolov" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" size="lg" className="bg-white text-veyalab-purple hover:bg-veyalab-gray hover:text-veyalab-purple">
+              Записаться на бесплатную консультацию
+            </Button>
+          </a>
+        </div>
       </div>
     </section>
   );

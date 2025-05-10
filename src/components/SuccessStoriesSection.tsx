@@ -62,17 +62,17 @@ const successStories: SuccessStory[] = [
 const SuccessStoryCard: React.FC<{ story: SuccessStory }> = ({ story }) => {
   return (
     <Card className="h-full border border-gray-200 shadow-sm">
-      <CardHeader>
+      <CardHeader className="text-center">
         <CardTitle className="text-xl md:text-2xl font-bold">{story.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4 text-left">
         <div>
-          <h4 className="font-semibold text-lg mb-2">Проблема:</h4>
+          <h4 className="font-semibold text-lg mb-2 text-center sm:text-left">Проблема:</h4>
           <CardDescription className="text-sm md:text-base">{story.problem}</CardDescription>
         </div>
         
         <div>
-          <h4 className="font-semibold text-lg mb-2">Решение:</h4>
+          <h4 className="font-semibold text-lg mb-2 text-center sm:text-left">Решение:</h4>
           <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
             {story.solution.map((item, index) => (
               <li key={index}>{item}</li>
@@ -81,7 +81,7 @@ const SuccessStoryCard: React.FC<{ story: SuccessStory }> = ({ story }) => {
         </div>
         
         <div>
-          <h4 className="font-semibold text-lg mb-2">Результат:</h4>
+          <h4 className="font-semibold text-lg mb-2 text-center sm:text-left">Результат:</h4>
           <CardDescription className="text-sm md:text-base">{story.result}</CardDescription>
         </div>
       </CardContent>
@@ -102,17 +102,17 @@ const SuccessStoriesSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="relative">
+        <div className="relative px-2">
           <Carousel
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
             className="w-full"
           >
             <CarouselContent>
               {successStories.map((story) => (
-                <CarouselItem key={story.id} className="md:basis-1/1 lg:basis-1/1 pl-4 py-2">
+                <CarouselItem key={story.id} className="md:basis-1/1 lg:basis-1/1">
                   <div className="p-1">
                     <SuccessStoryCard story={story} />
                   </div>
@@ -120,8 +120,8 @@ const SuccessStoriesSection: React.FC = () => {
               ))}
             </CarouselContent>
             <div className="flex justify-center mt-6">
-              <CarouselPrevious className={`relative ${isMobile ? 'left-0' : '-left-4'} mx-2`} />
-              <CarouselNext className={`relative ${isMobile ? 'right-0' : '-right-4'} mx-2`} />
+              <CarouselPrevious className="relative mx-2" />
+              <CarouselNext className="relative mx-2" />
             </div>
           </Carousel>
         </div>
