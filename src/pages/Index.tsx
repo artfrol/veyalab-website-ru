@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import ProblemSection from '@/components/ProblemSection';
 import ProcessSection from '@/components/ProcessSection';
 import BenefitsSection from '@/components/BenefitsSection';
+import SuccessStoriesSection from '@/components/SuccessStoriesSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -39,6 +40,7 @@ const Index = () => {
       <main className="pt-16 md:pt-20"> {/* Added padding top to account for fixed navbar */}
         <HeroSection />
         <ProblemSection />
+        <SuccessStoriesSection />
         <ProcessSection />
         <BenefitsSection />
         <CtaSection />
