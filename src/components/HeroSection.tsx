@@ -24,7 +24,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
               >
                 {isMobile ? (
-                  <Button variant="outline" size="default" className="bg-white text-veyalab-purple hover:bg-veyalab-gray hover:text-veyalab-purple">
+                  <Button variant="outline" size="default" className="bg-gradient-to-r from-veyalab-purple to-veyalab-blue text-white hover:from-veyalab-dark-purple hover:to-veyalab-dark-blue transition-all duration-300 shadow-lg hover:shadow-xl px-4 py-2 text-base md:px-8 md:py-6 md:text-lg">
                     Записаться на бесплатную консультацию
                   </Button>
                 ) : (

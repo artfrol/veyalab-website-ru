@@ -40,8 +40,8 @@ const Index = () => {
       <main className="pt-20 md:pt-24"> {/* Increased padding top to account for the navbar on mobile */}
         <HeroSection />
         <ProblemSection />
-        <SuccessStoriesSection />
         <ProcessSection />
+        <SuccessStoriesSection />
         <BenefitsSection />
         <CtaSection />
       </main>
