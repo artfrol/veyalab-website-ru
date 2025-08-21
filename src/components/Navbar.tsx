@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#solutions", label: "Решения" },
+  { href: "#solutions", label: "Наши решения" },
   { href: "#how-we-work", label: "Как мы работаем" },
   { href: "#integrations-security", label: "Интеграции и безопасность" },
 ];
